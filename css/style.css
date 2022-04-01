@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;651&family=Quicksand:wght@300&display=swap');
+/* font-family: 'Dancing Script', cursive;
+   font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;651&family=Hurricane&family=Quicksand:wght@300&display=swap');
+/*  font-family: 'Dancing Script', cursive;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;651&family=Hurricane&family=Quicksand:wght@300&display=swap');
+/*  font-family: 'Dancing Script', cursive;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Quicksand', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*BARRA DE NAVEGACION*/
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+header nav ul {
+    display: contents;
+}
+
+.list {
+    margin: 2.5rem;
+}
+
+.logo {
+    width: 35%;
+    margin: 0.50rem;
+}
+
+header {
+    background-image: url(../images/pizza-4952509_1920.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 1.5rem;
+}
+
+.anav {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+
+/*TERMINA BARRA DE NAVEGACION */
+
+.texthome {
+    width: 70rem;
+    height: 30rem;
+}
+
+h1 {
+    font-size: 4rem;
+    color: rgb(34, 128, 34);
+    font-family:'Dancing Script', cursive;
+}
+
+.destacado  {
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    color: #bd2322;
+}
+
+header div  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+/* COMIENZA MAIN*/
+
+main  {
+    background-image: url(../images/menu-3206749_1920.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin: 1.5rem;
+    padding-bottom: 20rem; 
+}
+
+main div  {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+
+
+.insta  { 
+    width: 5%;
+}
+
+.face {
+    width: 65%;
+}
+
+footer ul {
+    display: contents;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: black;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin: 1.5rem;
+}
+
+footer  {
+    background-image: url(../images/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 50vh;
+    padding-bottom: 10rem;
+}
+
+a {
+    color: white;
+}
+
+
+/*.destacado {
+    color: rgb(255, 255, 255);
+    font-size: 60px;    
+    font-family:'Dancing Script', cursive;
+}
+
+.formulario {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 150px;   
+}
+
+.conocenos { 
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 100px; 
+}
+
+iframe  {
+    position: absolute; 
+    margin-top: 380px;
+    margin-left: 300px; 
+}*/
