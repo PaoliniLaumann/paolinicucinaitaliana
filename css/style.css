@@ -9,6 +9,8 @@
 /*  font-family: 'Dancing Script', cursive;
     font-family: 'Hurricane', cursive;
     font-family: 'Quicksand', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=BIZ+UDMincho&display=swap');
+/*font-family: 'BIZ UDMincho', serif;*/
 
 * {
     margin: 0;
@@ -23,6 +25,7 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
+    flex-wrap: wrap;
 }
 
 header nav ul {
@@ -30,7 +33,7 @@ header nav ul {
 }
 
 .list {
-    margin: 2.5rem;
+    margin: 1.5rem;
 }
 
 .logo {
@@ -42,124 +45,373 @@ header {
     background-image: url(../images/pizza-4952509_1920.jpg);
     background-size: cover;
     min-height: 100vh;
-    margin: 1.5rem;
+    border-bottom: #bd2322 3px;
 }
 
 .anav {
     display: flex;
     justify-content: center;
     color: aliceblue;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-decoration: none;
+    margin: 0.5rem;
 }
 
 
 /*TERMINA BARRA DE NAVEGACION */
 
+/*TEXTO INDEX*/
 .texthome {
-    width: 70rem;
-    height: 30rem;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 8rem;
+    margin-left: 4rem;
 }
 
-h1 {
+
+.destacadoh1 {
     font-size: 4rem;
-    color: rgb(34, 128, 34);
-    font-family:'Dancing Script', cursive;
+    color: rgb(255, 255, 255);
+    font-family: 'BIZ UDMincho', serif;
 }
 
-.destacado  {
-    font-size: 4rem;
-    font-family: 'Dancing Script', cursive;
-    color: #bd2322;
+.destacado {
+    font-size: 3rem;
+    font-family: 'BIZ UDMincho', serif;
+    color: beige;
 }
 
-header div  {
+header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
 }
 
-/* COMIENZA MAIN*/
+/*ARTICLE PEDIDOS*/
 
-main  {
-    background-image: url(../images/menu-3206749_1920.jpg);
+.text_pedidos {
+    color: beige;
+    padding: 2.5rem;
+}
+
+.conocenos {
+    padding-bottom: 2rem;
+}
+
+article {
+    background-image: url(../images/fondo-negro.jpg);
+    border-top: #bd2322 8px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem;
+}
+
+iframe {
+    padding: 4rem;
+}
+
+/* COMIENZA MAIN INDEX*/
+
+main {
+    display: grid;
+    grid-template-areas:
+        " section1 section2 section3 "
+        " section4 section5 section6"
+        " section7 section8 section9";
+    grid-template-rows: 400px auto 100px;
+    grid-template-columns: 10% 32% auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    height: 1000px;
+    margin: 0;
+    background-image: url(../images/pexels-anywaylb-baina-lazareva-8588501.jpg);
     background-size: cover;
     min-height: 100vh;
-    margin: 1.5rem;
-    padding-bottom: 20rem; 
+    padding-bottom: 10rem;
+    border-top: #bd2322 8px;
+    border-style: solid;
 }
 
-main div  {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
+.section1 {
+    grid-area: section1;
 }
 
-
-
-.insta  { 
-    width: 5%;
+.section2 {
+    grid-area: section2;
 }
 
-.face {
-    width: 65%;
+.section3 {
+    grid-area: section3;
 }
 
-footer ul {
-    display: contents;
+.section4 {
+    grid-area: section4;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
+.section5 {
+    grid-area: section5;
+}
+
+.section6 {
+    grid-area: section6;
+}
+
+.section7 {
+    grid-area: section7;
+}
+
+.section8 {
+    grid-area: section8;
+}
+
+.sectio9 {
+    grid-area: section9;
+}
+
+.section5 {
+    color: beige;
+    font-size: 2rem;
+    font-family: 'BIZ UDMincho', serif;
+    text-align: center;
+}
+
+.titulo_section {
+    color: white;
+    font-size: 3rem;
+    font-family: 'BIZ UDMincho', serif;
     padding: 1.5rem;
-    background-color: black;
-}
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    margin: 1.5rem;
 }
 
-footer  {
+/*FINALIZA MAIN INDEX*/
+
+
+/* FOOTER implementacion grid-template-areas*/
+
+footer {
+    display: grid;
+    grid-template-areas:
+        "footer1 footer2 footer3"
+        "footer4 footer4 footer4";
+    grid-template-rows: 90% auto;
+    grid-template-columns: 33% 33% 33%;
+    align-items: baseline;
+    border-top: #bd2322 8px;
+    border-style: solid;
+
+}
+
+.footer1 {
+    grid-area: footer1;
+}
+
+.footer2 {
+    grid-area: footer2;
+}
+
+.footer3 {
+    grid-area: footer3;
+}
+
+.footer4 {
+    grid-area: footer4;
+}
+
+footer {
     background-image: url(../images/footer.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50vh;
     padding-bottom: 10rem;
+
+}
+
+.div_footer {
+    color: beige;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 0.5rem;
 }
 
 a {
-    color: white;
+    color: beige;
+    text-decoration: none;
 }
 
+/*FIN DE FOOTER*/
 
-/*.destacado {
-    color: rgb(255, 255, 255);
-    font-size: 60px;    
-    font-family:'Dancing Script', cursive;
+
+
+
+/*GRID GALERIA*/
+
+.grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    background-image: url(../images/fondo-pizza.jpg);
 }
 
-.formulario {
-    position: absolute;
-    margin-top: 120px;
-    margin-left: 150px;   
+.grid-galeria .foto {
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    padding: 2rem;
 }
 
-.conocenos { 
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 100px; 
+.grid-galeria .foto img {
+    width: 25rem;
+    height: 17rem;
 }
 
-iframe  {
-    position: absolute; 
-    margin-top: 380px;
-    margin-left: 300px; 
-}*/
+.grid-galeria {
+    border-top: #bd2322 8px;
+    border-style: solid;
+}
+
+/* FIN GRID GALERIA */
+
+@media screen and (max-width: 960px) {
+    .navbar {
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .grid-galeria {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .grid-galeria .foto {
+        padding: 0.5rem;
+    }
+
+    .grid-galeria .foto img {
+        width: 25rem;
+        height: 17rem;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .grid-galeria {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    .grid-galeria .foto {
+        padding: 0.5rem;
+    }
+
+    .grid-galeria .foto img {
+        width: 25rem;
+        height: 17rem;
+    }
+
+
+    .texthome {
+        display: flex;
+        justify-content: center;
+    }
+
+    .destacado {
+        font-size: 3rem;
+        font-family: 'Dancing Script', cursive;
+        color: beige;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .texthome {
+        width: auto;
+        margin: 0;
+    }
+
+    .destacadoh1,
+    .destacado {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .grid-galeria .foto img {
+        width: 18rem;
+    }
+
+    .anav {
+        font-size: 1.8rem;
+        margin: 0rem;
+    }
+
+    .section5 {
+        font-size: 1.5rem;
+        width: auto;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .titulo_section {
+        color: white;
+    }
+
+    .div_footer {
+        color: beige;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+    }
+
+    footer {
+        background-image: url(../images/fondo-negro.jpg);
+    }
+
+    footer {
+        display: grid;
+        grid-template-areas:
+            "footer4 footer1"
+            "footer4 footer2"
+            "footer4 footer3";
+        grid-template-rows: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        display: grid;
+        grid-template-areas:
+            " section1"
+            " section5 "
+            " section4 ";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        margin: 0;
+        padding: 0;
+        height: 50px;
+    }
+
+    iframe {
+        width: auto;
+    }
+
+    .destacado2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .text_pedidos {
+        text-align: center;
+    }
+
+    .foto_footer {
+        display: none;
+    }
+
+}

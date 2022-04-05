@@ -15,26 +15,31 @@
         <nav class="navbar">
 
             <ul class="list-der">
-                <li class="list"> <a href="index.html">Home</a></li>
-                <li class="list"> <a href="reservas.html">Reservas</a></li>
-                <li class="list"> <a href="pedidos.html">Pedidos</a></li>
+                <li class="list"> <a class="anav" href="index.html">Home</a></li>
+                <li class="list"> <a class="anav" href="reservas.html">Reservas</a></li>
+                <li class="list"> <a class="anav" href="pedidos.html">Pedidos</a></li>
             </ul>
 
-            <a href="index.html"> <img src="images/paolini-PhotoRoom (1).png" alt="cucina italiana" class="logo">
+            <a class="anav" href="index.html"> <img src="images/paolini-PhotoRoom (1).png" alt="cucina italiana"
+                    class="logo">
             </a>
 
-
-            <ul>
-                <li class="list"> <a href="contact.html">Contacto</a></li>
-                <li class="list"> <a href="conocenos.html">Conocemos</a></li>
-                <li class="list"> <a href="conocenos.html">Galeria</a></li>
+            <ul class="list-izq">
+                <li class="list"> <a class="anav" href="contact.html">Contacto</a></li>
+                <li class="list"> <a class="anav" href="conocenos.html">Conocemos</a></li>
+                <li class="list"> <a class="anav" href="galeria.html">Galeria</a></li>
             </ul>
 
         </nav>
+        <div class="texthome">
+            <h1 class="destacadoh1">Paolini Cucina Italiana</h1>
+            <p class="destacado"> "Lo Mejor de la Cocina Italiana"</p>
+        </div>
+
     </header>
     <article class="formulario">
-        <H1>Hace tu Pedido Aqui!</H1>
-        <form action="envio.php" method="post">
+        <H1 class="text_pedidos">Hace tu Pedido Aqui!</H1>
+        <form class="form1" action="envio.php" method="post">
             <p><label for="">Nombre Completo</label><br><input type="text" value="" placeholder="escribi aca tu nombre">
             </p>
             <p><label for="">Email</label><br><input type="email" value="" placeholder="escribi aca email"></p>
@@ -45,16 +50,28 @@
         </form>
     </article>
     <footer>
-        <h2 class="footer"></h2>
-        <table>
-            <tr>
-                <th><a href="conocenos.html">Quienes Somos</a></th>
-                <th><a href="contact.html">Donde estamos</a></th>
-                <th>Seguinos en nuestras redes</th>
-                <th><a href="https://es-la.facebook.com">Facebook</a></th>
-                <th><a href="https://www.instagram.com">Instagram</a></th>
-            </tr>
-        </table>
+        <div class="footer1 div_footer">
+            <ul>
+                <li>SOBRE NOSOTROS</li>
+                <li><a href="conocenos.html">Conocenos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="footer2 div_footer">
+            <img src="images/paolini-PhotoRoom (1).png" alt="logo" width="25%" class="foto_footer">
+            <p>® 2022 Marca registrada <br>
+                Todos los derechos reservados
+            </p>
+        </div>
+        <div class="footer3 div_footer">
+            <ul>
+                <li>RECURSOS</li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+            </ul>
+        </div>
+        
     </footer>
 </body>
 
