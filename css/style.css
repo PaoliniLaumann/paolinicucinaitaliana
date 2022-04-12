@@ -41,6 +41,62 @@ header nav ul {
     margin: 0.50rem;
 }
 
+/* Transformaciones */
+.transform1:hover {
+    color: red;
+    font-size: 4rem;
+    transition: all 2s;
+}
+
+.transform2:hover {
+    color: green;
+    font-size: 2.1rem;
+    transition: all 2s;
+}
+
+.transform3:hover {
+    color: red;
+    font-size: 2rem;
+    transition: all 2s;
+}
+
+.transform4:hover {
+    transform: rotateY(360deg);
+    transition: all 3s;
+}
+
+input   {
+    width: 50px;
+    height: 20px;
+    font-size: 10px;
+    transition: all 2s;
+}
+
+input:hover {
+    width: 80px;
+    height: 40px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+input:focus {
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.textform {
+    color: antiquewhite;
+}
+
+.tranform5:hover {
+    transform: rotateY(360deg);
+    transition: all 4s;
+}
+
+/*FIN DE TRANSFORMACIONES*/ 
+
 header {
     background-image: url(../images/pizza-4952509_1920.jpg);
     background-size: cover;
@@ -127,7 +183,8 @@ main {
     grid-row-gap: 10px;
     height: 1000px;
     margin: 0;
-    background-image: url(../images/pexels-anywaylb-baina-lazareva-8588501.jpg);
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgb(56, 54, 54)), url(../images/pexels-anywaylb-baina-lazareva-8588501.jpg);  /* SE AGREGA GRADIENTE AL MAINs */ 
+    /* background-image: url(../images/pexels-anywaylb-baina-lazareva-8588501.jpg); */
     background-size: cover;
     min-height: 100vh;
     padding-bottom: 10rem;
@@ -220,7 +277,7 @@ footer {
 }
 
 footer {
-    background-image: url(../images/footer.jpg);
+    background-image: linear-gradient(to top, rgba(255,255,255,0), rgb(56, 54, 54)), url(../images/footer.jpg);  /* SE AGREGA GRADIENTE AL FOOTER */  
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 50vh;
